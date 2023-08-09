@@ -1,0 +1,141 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1 {
+  background-color: #007bff;
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+  margin: 0.5rem 0;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+/* Table styles */
+table {
+  width: 94%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Search and sort */
+#search {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.search-sort-container {
+  width: 94%;
+  margin: 1rem 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .search-sort-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* Stilovi za formu */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form select {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+form button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #0062cc;
+}
